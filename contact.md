@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contact - Vaynee Sungeelee
+title: Contact 
 permalink: /contact/
 ---
 

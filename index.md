@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Vaynee Sungeelee
+title: 
 ---
 
 <section class="hero">
@@ -9,13 +9,16 @@ title: Vaynee Sungeelee
 </section>
 
 <nav class="quick-links">
-	<a href="{{ '/about/' | relative_url }}">About</a>
-	<a href="{{ '/projects/' | relative_url }}">Projects</a>
-	<a href="{{ '/contact/' | relative_url }}">Contact</a>
+	<a href="about.md">About</a>
+	<a href="projects.md">Projects</a>
+	<a href="contact.md">Contact</a>
 </nav>
 
 <div class="featured-content">
-	<p>I'm a researcher turned data analyst, specializing in human-AI interaction and data-driven insights. Check out my <a href="{{ '/projects/' | relative_url }}">projects</a> or <a href="{{ '/about/' | relative_url }}">learn more about me</a>.</p>
+	<p>
+		I'm a researcher turned data analyst, specializing in human-AI interaction and data-driven insights. 
+		Check out my <a href="projects.md">projects</a> or <a href="about.md">learn more about me</a>.
+	</p>
 </div>
 
 ---

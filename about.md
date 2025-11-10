@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About - Vaynee Sungeelee
+title: About 
 permalink: /about/
 ---
 
