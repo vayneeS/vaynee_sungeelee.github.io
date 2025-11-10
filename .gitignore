@@ -1,0 +1,46 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+venv/
+ENV/
+.env
+.venv
+
+# Ruby / Jekyll
+.bundle/
+vendor/bundle/
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Build / distribution
+dist/
+build/
+coverage/
+*.log
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Misc
+*.swp
+*.tmp
+*.bak
+*.backup
