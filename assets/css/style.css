@@ -68,3 +68,11 @@ a:hover { color: var(--accent-strong); text-decoration:underline }
   .content{padding:20px}
   .key-findings{grid-template-columns:1fr}
 }
+
+/* Responsive figure/image utilities */
+.figure{margin:20px 0;text-align:center}
+.figure img, .responsive-img{max-width:100%;width:100%;height:auto;display:block;margin:0 auto;border-radius:6px}
+.figure figcaption{font-size:0.95em;color:#666;margin-top:8px}
+
+.half-size{width:48%;max-width:48%;display:inline-block;vertical-align:top;margin-right:4%}
+.half-size:last-child{margin-right:0}
