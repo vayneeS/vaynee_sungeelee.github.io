@@ -9,7 +9,8 @@
 <body>
     <header class="site-header">
         <div class="wrap header-inner">
-            <h2 class="site-title"><a href="./">Vaynee Sungeelee</a></h2>
+            <!-- keep header layout consistent with index: site title hidden in header to avoid duplication with hero -->
+            <!-- <h2 class="site-title"><a href="./">Vaynee Sungeelee</a></h2> -->
             <nav class="site-nav">
                 <a href="./">Home</a>
                 <a href="about.html">About</a>
@@ -20,21 +21,18 @@
     </header>
 
     <main class="wrap">
-        <h2>Contact</h2>
-        <div class="hero">
-            <!-- Social Links -->
-            <div class="social-links">
-                <a href="https://linkedin.com/in/vaynee-sungeelee" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="mailto:vaynee.s@hotmail.com" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </div>
+        <section class="hero-intro">
+            <h1>Contact</h1>
+            <p class="tagline">I'd love to hear from you. Reach out using any of the options below.</p>
+        </section>
+
+        <section class="content">
+            <ul>
+                <li>Email: <a href="mailto:vaynee.s@hotmail.com">vaynee.s@hotmail.com</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/vaynee-sungeelee" target="_blank">linkedin.com/in/vaynee-sungeelee</a></li>
+                <li>GitHub: <a href="https://github.com/vayneeS" target="_blank">github.com/vayneeS</a></li>
+            </ul>
+        </section>
     </main>
 
     <footer class="site-footer">
