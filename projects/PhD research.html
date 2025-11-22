@@ -1,0 +1,425 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosthesis strategies with ML</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <h2 class="site-title"><a href="../">Vaynee Sungeelee</a></h2>
+            <nav class="site-nav">
+                <a href="../">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../projects.html">Projects</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <h1>Prosthesis strategies with ML</h1>
+
+        <h2>Short summary</h2>
+        <p>This project (my PhD project) explores machine learning strategies for prosthesis control and decision-making. It combines behavioral experiments, modeling, and applied ML to evaluate strategies that improve user interaction with assistive devices.</p>
+
+        <h2>Key details</h2>
+        <ul>
+            <li>Role: PhD researcher / developer / data analyst</li>
+            <li>Methods: Behavioral experiments, supervised learning, model evaluation, data analysis (Python, scikit-learn, pandas)</li>
+            <li>Outputs: Code, data analyses, and visualizations</li>
+        </ul>
+
+        <h2>Repository</h2>
+        <p>The full code and documentation live on GitHub:</p>
+        <p><a href="https://github.com/vayneeS/prosthesis-strategies-with-ml">Prosthesis strategies with ML — GitHub repository</a></p>
+
+        <h2>Introduction</h2>
+        <p>This project investigates how different machine learning training strategies can improve gesture recognition accuracy and enhance users' understanding of ML systems for prosthetic arm control. The system uses electromyographic (EMG) signals from the Myo armband to classify hand gestures and movements, enabling intuitive control of prosthetic devices.</p>
+
+        <h3>Highlights</h3>
+        <ul>
+            <li>Evaluates three curriculum strategies: Random Curriculum (RC), User Choice Curriculum (UCC), and Gesture Separability Curriculum (GSC).</li>
+            <li>Uses LDA classifier and time-domain EMG features (RMS).</li>
+            <li>Demonstrated that the adaptive, system-driven strategy (GSC) produced the fastest and largest improvements in accuracy and better user mental models.</li>
+        </ul>
+
+        <h3>Some results</h3>
+        <p>Below are two representative figures from the project README:</p>
+        <img src="https://raw.githubusercontent.com/vayneeS/prosthesis-strategies-with-ml/main/public/images/final_accuracy_comparison.png" class="half-size" alt="Model Accuracy">
+        <img src="https://raw.githubusercontent.com/vayneeS/prosthesis-strategies-with-ml/main/public/images/accuracy_over_trials_plot.png" class="half-size" alt="Accuracy Improvement Over Training">
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>&copy; 2025 Vaynee Sungeelee</p>
+        </div>
+    </footer>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizing Motor Learning with AI</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Personalizing Motor Learning with AI</h1>
+            <p class="tagline">How machine learning can transform rehabilitation and skill training</p>
+        </div>
+        
+        <div class="content">
+            <!-- ACT 1: SETUP - The Problem -->
+            <div class="story-section">
+                <h2>The Challenge We Face</h2>
+                <p>
+                    Every day, millions of people work to master physical skills — stroke survivors relearning to write, 
+                    athletes perfecting their technique, surgeons training for precision procedures. Yet traditional training 
+                    follows a <strong>one-size-fits-all approach</strong> that ignores a fundamental truth: 
+                    <em>everyone learns differently</em>.
+                </p>
+                <p>
+                    In rehabilitation centers, therapists struggle to adjust exercises in real-time for each patient. 
+                    In EdTech platforms teaching motor skills, learners receive the same progression regardless of their 
+                    individual needs. The result? <strong>Slower progress, lower motivation, and missed potential</strong>.
+                </p>
+                <p>
+                    What if we could give every learner their own adaptive coach — one that watches their every movement 
+                    and adjusts training instantly?
+                </p>
+            </div>
+
+            <!-- ACT 2: CONFRONTATION - The Research -->
+            <div class="story-section">
+                <h2>Our Approach: AI Meets Motor Learning</h2>
+                <p>
+                    Random practice has been shown to be effective for learning motor skills, but does not consider the skill level of the learner.
+                    During my PhD, I set out to answer a critical question: <strong>Can machine learning personalize 
+                    motor skill training more effectively than a random practice schedule?</strong>.
+                </p>
+                
+                <div class="methodology">
+                    <h3>The Experiment</h3>
+                    <p>
+                        I designed a controlled study where participants learned to trace curved paths using an infrared 
+                        marker — a task that mirrors real-world motor challenges in rehabilitation (regaining hand control) 
+                        and professional training (surgical precision).
+                    </p>
+                    <p style="margin-top: 15px;">
+                        By varying the channel width, we controlled difficulty: <em>narrow channels = harder, 
+                        wide channels = easier</em>. But here's the key innovation: instead of following a fixed 
+                        training sequence, an <strong>AI algorithm decided which difficulty to present next</strong>, 
+                        based on each learner's real-time performance.
+                    </p>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>The Machine Learning Strategy</h3>
+                    <p>
+                        We used a <strong>multi-armed bandit algorithm</strong> — a technique that balances trying 
+                        new challenges (exploration) with reinforcing what works (exploitation). The system continuously 
+                        analyzed two key metrics:
+                    </p>
+                    <ul>
+                        <li><strong>Accuracy:</strong> Can the learner stay within the path?</li>
+                        <li><strong>Movement smoothness (jerk):</strong> How expert-like are their movements?</li>
+                    </ul>
+                    <p style="margin-top: 15px;">
+                        Based on these signals, the AI selected the next exercise to maximize learning progress — 
+                        just like an expert therapist would, but at scale.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ACT 3: RESOLUTION - The Results -->
+            <div class="story-section">
+                <h2>What We Discovered</h2>
+                <p>
+                    Compared to traditional random practice and semi-adaptive methods, the AI-personalized training 
+                    produced remarkable results:
+                </p>
+
+                <div class="key-findings">
+                    <div class="finding-card">
+                        <h4>🎯 Superior Movement Quality</h4>
+                        <p>
+                            Learners achieved <strong>smoother, more expert-like movements</strong> — the hallmark 
+                            of true motor mastery. In rehabilitation, this means safer, more natural motion. In 
+                            professional training, it translates to efficiency and precision.
+                        </p>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <h4>🔄 Better Skill Transfer</h4>
+                        <p>
+                            Skills learned with AI guidance <strong>transferred better to new situations</strong>. 
+                            This is critical: stroke patients must adapt skills to daily life, athletes face 
+                            ever-changing conditions, trainees encounter scenarios beyond their practice.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Why Movement Smoothness Matters</h3>
+                    <p>
+                        While accuracy is important, <strong>smoothness is the hidden marker of expertise</strong>. 
+                        Surgeons with smoother hand motions make fewer errors. Athletes with fluid movements use 
+                        energy more efficiently and reduce injury risk. Rehabilitation patients with smoother motion 
+                        regain functional independence faster.
+                    </p>
+                    <p style="margin-top: 15px;">
+                        Our AI didn't just help people complete the task — it helped them develop <em>higher-quality 
+                        motor skills</em> that matter in the real world.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CONCLUSION: Impact and Future -->
+            <div class="impact-statement">
+                <h3>The Future of Personalized Motor Learning</h3>
+                <p>
+                    This research proves that AI can deliver individualized motor training at scale — 
+                    making expert-level coaching accessible to stroke survivors in remote clinics, 
+                    athletes training at home, and professionals mastering complex skills.
+                </p>
+            </div>
+
+            <div class="story-section">
+                <h2>Real-World Applications</h2>
+                <p>This approach opens doors across multiple domains:</p>
+                <ul>
+                    <li>
+                        <strong>Rehabilitation technology:</strong> Adaptive therapy apps that adjust exercises 
+                        for stroke recovery, motor impairment, or injury rehabilitation
+                    </li>
+                    <li>
+                        <strong>EdTech platforms:</strong> Intelligent tutoring systems for music, sports, 
+                        craftsmanship, or any skill requiring physical mastery
+                    </li>
+                    <li>
+                        <strong>Professional training:</strong> Surgical simulation, precision manufacturing, 
+                        and technical skills where movement quality determines success
+                    </li>
+                    <li>
+                        <strong>Accessible coaching:</strong> Bringing personalized training to underserved 
+                        populations who lack access to expert therapists or coaches
+                    </li>
+                </ul>
+            </div>
+
+            <div class="story-section">
+                <h2>The Takeaway</h2>
+                <p>
+                    Traditional motor learning treated everyone the same. Human experts could personalize training, 
+                    but only for the few. <strong>AI makes personalization scalable</strong> — combining the 
+                    adaptability of a human coach with the consistency and accessibility of technology.
+                </p>
+                <p>
+                    By teaching machines to recognize what each learner needs, when they need it, we're not 
+                    replacing human expertise — we're <em>extending it to everyone</em>.
+                </p>
+            </div>
+
+            <!-- PROJECT DIVIDER -->
+            <div style="border-top: 3px solid #e0e0e0; margin: 60px 0;"></div>
+
+            <!-- PROJECT 2: PROSTHETIC CONTROL -->
+            <div class="hero" style="margin: 40px -40px; border-radius: 12px;">
+                <h1 style="font-size: 2.2em;">Teaching Humans and Machines Together</h1>
+                <p class="tagline">Adaptive learning for prosthetic control and rehabilitation</p>
+            </div>
+
+            <!-- ACT 1: SETUP - The Problem -->
+            <div class="story-section" style="margin-top: 50px;">
+                <h2>A Double Challenge in Rehabilitation</h2>
+                <p>
+                    Imagine losing a limb and being fitted with a robotic prosthesis controlled by your muscle signals. 
+                    You must learn to perform gestures — open hand, close fist, rotate wrist — while simultaneously 
+                    <strong>training a machine learning algorithm to recognize your intentions</strong>. It's like 
+                    learning to speak a new language while teaching someone else to understand you at the same time.
+                </p>
+                <p>
+                    For thousands of prosthetic users worldwide, this is their daily reality. EMG-based prosthetic 
+                    systems read electrical signals from residual muscles, but there's a critical problem: 
+                    <em>beginners produce noisy, inconsistent signals</em>. The machine learning model struggles 
+                    to interpret them, and users grow frustrated as their prosthesis responds unpredictably. 
+                    Muscle patterns can also change over time, making it difficult to retrain the classifier if the user doesn't understand why recognition is poor
+                </p>
+                <p>
+                    Traditional rehabilitation takes an unfocused approach — gestures are practiced in random or 
+                    fixed order, with no consideration for which movements are actually difficult for the user or 
+                    confusing for the algorithm. The result? <strong>Slower recovery, lower accuracy, and users 
+                    who never develop intuitive control</strong>.
+                </p>
+                <p>
+                    What if we could design a training system that teaches both the human and the machine simultaneously?
+                </p>
+            </div>
+
+            <!-- ACT 2: CONFRONTATION - The Research -->
+            <div class="story-section">
+                <h2>Rethinking How We Teach Prosthetic Control</h2>
+                <p>
+                    In this project, I tackled a fundamental question: <strong>Can we create an intelligent curriculum 
+                    that adapts to both the user's motor learning needs and the classifier's training requirements?</strong>
+                </p>
+                
+                <div class="methodology">
+                    <h3>The Innovation: A Two-Way Learning System</h3>
+                    <p>
+                        Instead of forcing users through predetermined exercises, we designed an <strong>adaptive 
+                        motor-learning framework</strong> that monitors both human performance and machine learning 
+                        model accuracy in real-time.
+                    </p>
+                    <p style="margin-top: 15px;">
+                        The key insight: <em>the order in which gestures are practiced matters enormously</em>. Just as 
+                        you wouldn't teach a child to read by starting with Shakespeare, prosthetic users shouldn't 
+                        practice the most confusing gestures first.
+                    </p>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Three Teaching Strategies Compared</h3>
+                    <p><strong>Random Curriculum (RC):</strong> The standard approach used today — gestures presented 
+                    randomly, with no strategic planning. This is our baseline.</p>
+                    
+                    <p style="margin-top: 15px;"><strong>User Choice Curriculum (UCC):</strong> Users decide which 
+                    gesture to practice next. This promotes autonomy and engagement but provides no expert guidance 
+                    on optimal learning sequences.</p>
+                    
+                    <p style="margin-top: 15px;"><strong>Gesture Separability Curriculum (GSC):</strong> Our adaptive 
+                    system analyzes the classifier's internal representations and intelligently selects the next gesture 
+                    that will <em>maximize class separability</em> — essentially practicing the movements that are 
+                    currently most confused, where improvement will have the biggest impact.</p>
+                </div>
+
+                <p style="margin-top: 30px;">
+                    Think of GSC as an expert rehabilitation therapist who constantly assesses: "Which movement is this 
+                    patient struggling with most? Which gesture is the prosthesis misinterpreting? Let's focus there."
+                </p>
+            </div>
+
+            <!-- ACT 3: RESOLUTION - The Results -->
+            <div class="story-section">
+                <h2>The Power of Intelligent Sequencing</h2>
+                <p>
+                    Through rigorous experiments combining EMG recordings, behavioral analysis, and machine learning 
+                    evaluation, the adaptive strategy (GSC) emerged as the clear winner:
+                </p>
+
+                <div class="key-findings">
+                    <div class="finding-card">
+                        <h4>⚡ Faster Learning</h4>
+                        <p>
+                            Users improved their classification accuracy <strong>significantly faster</strong> with 
+                            adaptive curriculum compared to random or self-directed practice. The system identified 
+                            and targeted weaknesses automatically.
+                        </p>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <h4>🎯 Higher Peak Performance</h4>
+                        <p>
+                            By the end of training, GSC users achieved <strong>superior control accuracy</strong> 
+                            compared to both baseline approaches. Strategic practice built stronger skills.
+                        </p>
+                    </div>
+
+                    <div class="finding-card">
+                        <h4>📊 Cleaner Signals</h4>
+                        <p>
+                            Users developed <strong>more consistent, distinguishable EMG patterns</strong>. Their 
+                            muscle activations became clearer and more repeatable — essential for reliable prosthetic 
+                            control in daily life.
+                        </p>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <h4>🧠 Better Mental Models</h4>
+                        <p>
+                            Crucially, users developed <strong>deeper understanding of how the prosthesis interprets 
+                            their movements</strong>. This mental model is the foundation for autonomous, confident 
+                            long-term use.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Why This Approach Matters</h3>
+                    <p>
+                        Traditional prosthetic training treats the human and the machine as separate entities: first 
+                        train the user, then hope the classifier adapts. But they're <strong>learning partners</strong>. 
+                        When the system understands both sides of the equation — which movements challenge the user 
+                        AND which patterns confuse the algorithm — it can orchestrate training that optimizes both 
+                        simultaneously.
+                    </p>
+                    <p style="margin-top: 15px;">
+                        This isn't just about speed. Users who understand their prosthesis intuitively are more likely 
+                        to wear it consistently, experience fewer frustrations, and integrate it successfully into 
+                        daily activities. <em>Better training leads to better outcomes, not just better metrics.</em>
+                    </p>
+                </div>
+            </div>
+
+            <!-- CONCLUSION: Impact and Future -->
+            <div class="impact-statement">
+                <h3>Rehabilitation That Learns With You</h3>
+                <p>
+                    This research proves that adaptive curricula can improve how we approach motor rehabilitation — 
+                    creating systems that guide users through optimal learning sequences while simultaneously 
+                    building robust machine learning models. It's personalized therapy at scale.
+                </p>
+            </div>
+
+            <div class="story-section">
+                <h2>Beyond Prosthetics: A New Paradigm</h2>
+                <p>While this work focused on prosthetic control, the principles extend far beyond:</p>
+                <ul>
+                    <li>
+                        <strong>Stroke rehabilitation:</strong> Adaptive exercise selection that targets motor 
+                        impairments intelligently, focusing effort where it yields maximum functional recovery
+                    </li>
+                    <li>
+                        <strong>Brain-computer interfaces:</strong> Teaching users to generate clear neural signals 
+                        while training decoders to interpret them — critical for assistive communication devices
+                    </li>
+                    <li>
+                        <strong>Any Human-AI collaboration:</strong> Domains where humans must learn to work 
+                        effectively with intelligent systems that are simultaneously learning from them
+                    </li>
+                </ul>
+            </div>
+
+            <div class="story-section">
+                <h2>The Bigger Picture</h2>
+                <p>
+                    Together, these projects reveal a fundamental insight about the future of rehabilitation technology: 
+                    <strong>the best learning systems don't just track progress — they actively shape it</strong>.
+                </p>
+                <p>
+                    Whether personalizing motor skill training or coordinating human-machine co-learning, adaptive AI 
+                    can deliver what expert therapists have always provided: <em>the right challenge, at the right time, 
+                    for the right reason</em>. This is just the beginning — we need to continue to explore how to bring such expertise to millions, not just 
+                    the privileged few with access to specialized rehabilitation centers.
+                </p>
+                <p>
+                    This is rehabilitation reimagined — not as a one-size-fits-all protocol, but as a <strong>dynamic, 
+                    intelligent partnership</strong> between human learners, adaptive algorithms, and assistive technology. 
+                    A partnership that meets each person exactly where they are and guides them to where they need to be.
+                </p>
+            </div>
+            <div class="methodology"></div>
+                <h2>Repository</h2>
+                <p>The full code and documentation on GitHub:</p>
+                <p><a href="https://github.com/vayneeS/prosthesis-strategies-with-ml">GitHub repository</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
