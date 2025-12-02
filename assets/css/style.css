@@ -450,3 +450,35 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+.tech-name {
+    color: #444;
+    font-weight: 500;
+}
+/* Reusable styled table for portfolio/medium pages */
+.portfolio-table {
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.portfolio-table th,
+.portfolio-table td {
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.portfolio-table th {
+  /* background-color: #f5f5f5; */
+  font-weight: 600;
+}
+
+.portfolio-table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
