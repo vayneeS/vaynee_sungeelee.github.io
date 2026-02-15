@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -9,8 +9,6 @@
     <body>
         <header class="site-header">
             <div class="wrap header-inner">
-                <!-- keep header layout consistent with index: site title hidden in header to avoid duplication with hero -->
-                <!-- <h2 class="site-title"><a href="./">Vaynee Sungeelee</a></h2> -->
                 <nav class="site-nav">
                     <a href="./">Home</a>
                     <a href="../about.html">About</a>
@@ -21,7 +19,6 @@
         </header>
 
         <div class="container">
-            <!-- 1. HERO SECTION -->
             <div class="hero">
                 <h1>Optimizing Training Strategies for EMG-Controlled Prostheses</h1>
                 <p class="tagline">A PhD project turned into a data analysis case study.</p>
@@ -31,7 +28,6 @@
             </div>
 
             <div class="content">
-                <!-- 2. PROJECT OVERVIEW -->
                 <div class="story-section" id="overview">
                     <h2>Project Overview</h2>
                     <p>
@@ -67,7 +63,6 @@
                     </ul>
                 </div>
 
-                <!-- 3. BUSINESS QUESTIONS -->
                 <div class="story-section" id="business-questions">
                     <h2>Business Questions</h2>
                     <p>
@@ -104,7 +99,6 @@
                     </p>
                 </div>
 
-                <!-- 4. DATASET & METRICS -->
                 <div class="story-section" id="data-metrics">
                     <h2>Data collection and Key Metrics</h2>
                     <p>
@@ -204,7 +198,6 @@
                     </p>
                 </div>
 
-                <!-- 5. ANALYSIS & ML PIPELINE -->
                 <div class="story-section">
                     <p>
                         My analysis and machine learning pipeline relied on a set of core Python libraries:
@@ -242,7 +235,6 @@
                     </ul>
                 </div>
 
-                <!-- 5. METHODOLOGY -->
                 <div class="methodology" id="methodology">
                     <h3>Methodology: From Noisy EMG to Learning Curves</h3>
                     <p>
@@ -295,7 +287,6 @@
                     </ol>
                 </div>
 
-                <!-- 6. VISUAL ANALYSIS -->
                 <div class="story-section" id="visual-analysis">
                     <h2>Visual Analysis</h2>
 
@@ -304,7 +295,7 @@
                         <img src="../images/accuracy_across_trials_by_strategy.png" alt="Learning curves showing classification accuracy over 120 trials" class="responsive-img">
                         <figcaption>
                             Learning curves showing classification accuracy over 120 trials for each training strategy.
-                            The adaptive strategy displays a slower early increase and seems to reach a plateau near the end of training.
+                            The adaptive strategy displays a slower early increase compared to other strategies and seems to reach a plateau near the end of training.
                             The differences in final accuracy across strategies are not significant, meaning that there is no evidence that they are similar.
                         </figcaption>
                     </figure>
@@ -329,8 +320,26 @@
                         </figcaption>
                     </figure>
                 </div>
+                <div class="story-section" id="statistical-analysis">
+                    <h2>Statistical Analysis</h2>
+                    <p>
+                        To validate the visual findings, I use ANOVAs and t-tests when data were normally distributed, and Kruskal–Wallis otherwise.
+                        Significant results are reported using p-values, along with effect sizes to indicate the magnitude of the differences.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Learning Rates:</strong>
+                            ANOVA shows a significant effect of strategy on learning rate (p &lt 0.001).
+                            Post-hoc tests confirms that the adaptive strategy (GSC) has a significantly higher learning rate than both RC and UCC.
+                        </li>
+                        <li>
+                            <strong>Post-Training Functional Accuracy:</strong>
+                            Kruskal–Wallis shows a significant effect of strategy (p = 0.03).
+                            Post-hoc tests shows that GSC outperformed UCC (p &lt 0.04).
+                        </li>
+                    </ul>
 
-                <!-- 7. INSIGHTS & RECOMMENDATIONS -->
+                </div>
                 <div class="story-section" id="insights">
                     <h2>Insights & Recommendations</h2>
 
@@ -379,25 +388,24 @@
                     </div>
                 </div>
 
-                <!-- 8. IMPACT STATEMENT -->
                 <div class="impact-statement" id="impact">
                     <h3>Next Steps</h3>
                     <p>
                         This analysis shows that a relatively simple adaptive strategy, combined with basic signal preprocessing
-                        (RMS smoothing) and targeted outlier removal, can significantly improve how users learn to control a
+                        (RMS smoothing) and targeted outlier removal, can improve how users learn to control a
                         machine-learning-driven device.
                     </p>
                     <p style="margin-top: 15px;">
                         For product teams working on prosthetics, rehabilitation tools, gaming, or any human-in-the-loop ML
-                        system, <strong>structuring training around user performance is a powerful lever
-                        for better onboarding, stronger skills, and more confident long-term use</strong>.
+                        system, structuring training around user performance is a powerful lever
+                        for better onboarding, stronger skills, and more confident long-term use.
                     </p>
                 </div>
 
                 <!-- 9. SKILLS DEMONSTRATED -->
 
-                <!-- 10. REPOSITORY LINK -->
-                <!-- <div class="story-section" id="repo">
+<!-- 10. REPOSITORY LINK -->
+<!-- <div class="story-section" id="repo">
                     <h2>Code and Reproducibility</h2>
                     <p>
                         The full code, preprocessing scripts, and analysis notebooks for this project are available here:
@@ -406,7 +414,7 @@
                         📂 View GitHub Repository
                     </a>
                 </div> -->
-                <div class="story-section" id="repo">
+<!-- <div class="story-section" id="repo">
                     <p>
                         Reference:
                         <a href="https://amu.hal.science/ISIR_ACIDE/hal-04527854v1" target="_blank">
@@ -418,4 +426,303 @@
             </div>
         </div>
     </body>
+</html> -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adaptive Training for Prosthetic Control</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <nav class="site-nav">
+          <a href="./">Home</a>
+          <a href="../about.html">About</a>
+          <a href="../projects.html">Projects</a>
+          <a href="../contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- HERO -->
+      <div class="hero">
+        <h1>Adaptive Training for Prosthetic Control</h1>
+        <p class="tagline">
+          Using data to personalize motor learning and improve user outcomes
+        </p>
+        <div class="hero-links">
+          <a
+            href="https://github.com/vayneeS/prosthesis-strategies-with-ml"
+            target="_blank"
+            >View Code</a
+          >
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- PROJECT SUMMARY -->
+        <div class="story-section" id="overview">
+          <h2>The Problem</h2>
+          <p>
+            Prosthetic arm users struggle to maintain reliable control of their
+            devices. Training strategies directly impact how quickly users learn
+            to translate muscle signals (EMG) into accurate prosthetic
+            movements—but most systems use random, one-size-fits-all approaches
+            that ignore individual learning needs.
+          </p>
+          <p>
+            <strong>Question:</strong> Can an adaptive training strategy—one
+            that personalizes gesture selection based on real-time performance
+            help users learn faster and achieve better long-term control?
+          </p>
+        </div>
+
+        <!-- APPROACH -->
+        <div class="story-section" id="approach">
+          <h2>Approach</h2>
+          <p>
+            To test the adaptive training strategy, I did a user study comparing
+            it to two other training strategies across 50+ participants:
+          </p>
+
+          <div class="data-list">
+            <ul>
+              <li>
+                <strong>Random:</strong> Gestures presented in random order
+                (baseline)
+              </li>
+              <li>
+                <strong>User-Choice:</strong> Users select gestures based on
+                perceived difficulty
+              </li>
+              <li>
+                <strong>Adaptive:</strong> Adaptive strategy that selects
+                gestures based on classifier performance, focusing practice
+                where it matters most
+              </li>
+            </ul>
+          </div>
+
+          <figure>
+            <img
+              src="../images/experiment.png"
+              alt="Myo armband EMG data collection setup"
+              class="responsive-img"
+            />
+            <figcaption>
+              Participants wore a Myo armband and performed gestures following
+              one of three training strategies.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="story-section" id="data-pipeline">
+          <h2>Data Pipeline Design</h2>
+          <p>
+            <strong>The Challenge:</strong> Raw EMG signals from wearable
+            sensors are produced from muscle contractions, which can change 
+            with sensor placement or user fatigue, confusing classification models.
+          </p>
+            <p>
+            I designed and implemented a data pipeline to turn raw, noisy sensor signals into reliable, actionable data. 
+            The first step was signal cleaning: removing electrical interference while preserving meaningful muscle activity. 
+            Next, I standardized the 8 sensor channels so each one contributed equally—similar to balancing audio inputs so no single signal dominates the output. 
+            Finally, I aggregated high-frequency predictions (every 200ms) into one performance score per trial, enabling consistent tracking across 120 training rounds per user.
+            </p>
+
+            <p>
+            <strong>Why it matters:</strong> Without proper preprocessing, models risk learning noise instead of real movement patterns. 
+            This pipeline improved data quality, ensured fair comparisons across 50+ users with different physiologies and sensor placements, 
+            and made performance metrics robust enough for large-scale analysis.
+            </p>
+        </div>
+
+        <!-- 2. MACHINE LEARNING -->
+        <div class="story-section" id="machine-learning">
+          <h2>Machine Learning: How the System Recognizes Gestures</h2>
+            <p>
+            <strong>The Model:</strong> I implemented Linear Discriminant Analysis (LDA) to classify gestures from sensor data. 
+            In simple terms, LDA identifies the clearest boundaries between gesture categories by maximizing the separation 
+            between them. Rather than memorizing individual samples, it learns the core signal patterns that distinguish one gesture from another.
+            </p>
+
+            <p>
+            <strong>Why this approach?</strong> The dataset was relatively small (120 training rounds) and the signals were inherently noisy. 
+            LDA is well-suited for this context because it performs efficiently with limited data and low-dimensional inputs 
+            (8 sensor features per gesture). Its simplicity reduces the risk of overfitting and keeps the model stable and interpretable.
+            </p>
+
+            <p>
+            <strong>The Adaptive Layer:</strong> After each training round, the system analyzes classification errors to identify 
+            which gesture pairs are most frequently confused. These gestures are then prioritized in the next round. 
+            Instead of random repetition, the training loop focuses on the user’s specific weak points, making the system both 
+            data-driven and performance-optimized.
+            </p>
+        </div>
+
+        <!-- 3. STATISTICAL ANALYSIS -->
+        <div class="story-section" id="statistical-analysis">
+        <h2>Statistical Analysis: Validating Impact</h2>
+        
+        <p>
+            <strong>The Objective:</strong> Observing different learning curves wasn’t enough. 
+            We need to validate that the performance gaps between training strategies were statistically meaningful—not random variation.
+        </p>
+        
+        <p>
+            <strong>Learning Speed:</strong> I quantified each participant’s improvement rate over time and compared groups using ANOVA. 
+            The analysis showed that users trained with the adaptive training strategy improved significantly faster than the other groups. 
+            The likelihood that this difference occurred by chance was less than 0.1%, indicating a strong and reliable effect.
+        </p>
+        
+        <p>
+            <strong>Skill Transfer:</strong> I also evaluated whether participants could apply what they learned to reproduce gestures which would likely be recognised with the trained classifier —an indicator of true skill acquisition rather than memorization. 
+            Because the performance scores were not normally distributed, I used a non-parametric test (Kruskal-Wallis). 
+            The adaptive group again outperformed the user-choice group, with only a 3% probability that this result was due to chance (p = 0.03).
+        </p>
+
+        <p>
+            <strong>Effect Size:</strong> Beyond statistical significance, it’s important to measure 
+            how large the difference actually is. Effect size quantifies the magnitude of impact— 
+            for example, using metrics such as η² (eta squared) for ANOVA or Cohen’s d for pairwise 
+            comparisons. 
+            For clarity and readability, detailed effect size values are not reported here, 
+            but they were computed during the analysis to ensure the results were not only 
+            statistically significant but also practically meaningful.
+        </p>
+        </div>
+
+        <!-- RESULTS -->
+        <h2>Key Results & Business Impact</h2>
+
+        <h3>1. Adaptive training reduces time-to-competency</h3>
+        <figure>
+        <img
+            src="../images/Learning_rates_by_strategy.png"
+            alt="Learning rates by strategy"
+            class="responsive-img"
+        />
+        <figcaption>
+            Users exposed to adaptive gesture selection improved significantly faster 
+            than those using random or self-directed practice. Statistical validation 
+             confirms this is a robust effect, not random variation. 
+            In practical terms: the adaptive system increases learning speed.
+        </figcaption>
+        </figure>
+
+        <h3>2. Faster learning — without sacrificing final performance</h3>
+        <figure>
+        <img
+            src="../images/accuracy_across_trials_by_strategy.png"
+            alt="Accuracy across trials"
+            class="responsive-img"
+        />
+        <figcaption>
+            All groups reached similar peak accuracy by the end of training. 
+            The difference lies in speed: users trained with the adaptive strategy achieved proficiency earlier. 
+            This translates into reduced training time while maintaining the same 
+            performance ceiling — an efficiency gain with no trade-off in quality.
+        </figcaption>
+        </figure>
+
+        <h3>3. Stronger skill transfer and system understanding</h3>
+        <figure>
+        <img
+            src="../images/TPR.png"
+            alt="Test accuracy"
+            class="responsive-img"
+        />
+        <figcaption>
+            When tested on new movement sequences, users trained using the adaptive strategy performed significantly 
+            better (p = 0.03) than users of the user-choice strategy. This indicates deeper skill acquisition and better generalization, 
+            rather than short-term memorization. 
+        </figcaption>
+        </figure>
+
+        <!-- INSIGHTS -->
+        <div class="story-section" id="insights">
+          <h2>Key Insights</h2>
+
+          <div class="finding-card">
+            <h4>🚀 Faster onboarding</h4>
+            <p>
+              Adaptive training reduces time-to-competency by focusing practice
+              on gestures the classifier struggles with. This creates steeper
+              learning curves without requiring more total practice time.
+            </p>
+            <p>
+              <strong>Impact:</strong> Shorter training sessions, lower user
+              frustration, faster clinical deployment
+            </p>
+          </div>
+
+          <div class="finding-card">
+            <h4>🧠 Better user understanding</h4>
+            <p>
+              Users trained adaptively developed stronger mental models—they
+              understood why the system responded the way it did, not just how
+              to trigger specific actions.
+            </p>
+            <p>
+              <strong>Impact:</strong> Improved long-term adherence, reduced
+              support load, higher user confidence
+            </p>
+          </div>
+
+          <div class="finding-card">
+            <h4>🎯 Practical implementation</h4>
+            <p>
+              The adaptive strategy is simple: select gestures with lowest
+              classifier separability.
+            </p>
+            <p>
+              <strong>Impact:</strong> Easy to integrate into existing
+              prosthetic training systems
+            </p>
+          </div>
+        </div>
+
+        <!-- RECOMMENDATIONS -->
+        <div class="impact-statement" id="recommendations">
+          <h3>Recommendations</h3>
+          <p>
+            <strong>For product teams:</strong> Make adaptive training the
+            default onboarding path. Use random/user-choice only as fallback
+            options for users who prefer more control.
+          </p>
+          <p style="margin-top: 15px">
+            <strong>For UX designers:</strong> Insist on the logic behind
+            gesture selection—show users why they're practicing specific
+            movements. This transparency builds trust and strengthens mental
+            models.
+          </p>
+          <p style="margin-top: 15px">
+            <strong>For researchers:</strong> Test this approach beyond
+            prosthetics —any human-ML system where users learn to generate
+            signals (BCIs, rehabilitation tech, surgical training) could benefit
+            from adaptive training.
+          </p>
+        </div>
+
+        <!-- REFERENCE -->
+        <div class="story-section" id="repo">
+          <p>
+            <strong>Reference:</strong>
+            <a
+              href="https://amu.hal.science/ISIR_ACIDE/hal-04527854v1"
+              target="_blank"
+            >
+              Comparing Teaching Strategies of a Machine Learning-based
+              Prosthetic Arm (HAL Archive)
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
