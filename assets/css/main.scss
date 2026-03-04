@@ -39,7 +39,7 @@ body {
 }
 
 .site-title {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -56,6 +56,37 @@ body {
 
 .site-nav a:hover {
   color: var(--accent);
+}
+
+/* Ensure Minimal Mistakes nav is horizontal, clean, and aligned right */
+.masthead__inner-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.masthead__menu {
+  margin-left: auto;
+}
+
+.greedy-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.greedy-nav__items {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.greedy-nav__items > li {
+  list-style: none;
+  margin-left: 1.5rem;
 }
 
 .hero {
@@ -390,6 +421,32 @@ figcaption {
   font-style: italic;
   line-height: 1.5;
 }
+
+/* Constrain inline images on project pages so they fit nicely */
+.page__content img {
+  max-width: 760px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+/* Add breathing room around horizontal rules and following sections */
+.page__content hr {
+  margin: 2.5rem 0;
+  border: 0;
+  border-top: 1px solid #e0e4ea;
+}
+
+.page__content hr + * {
+  margin-top: 1.25rem;
+}
+
+/* Remove Previous / Next navigation links on all pages */
+.pagination,
+.pagination--pager {
+  display: none !important;
+}
 /* Global list & emphasis styles */
 ul {
   margin-left: 20px;
@@ -484,15 +541,192 @@ a:hover {
 .portfolio-table tr:nth-child(even) {
   background-color: #ffffff;
 }
-
-.greedy-nav__toggle {
+ 
+/* Hide all heading permalinks/anchor icons (text or icons) */
+.anchorjs-link,
+.page__content a[aria-label="Permalink"],
+.page__content a.header-link {
   display: none !important;
 }
 
-.hidden-links {
+/* Hide Minimal Mistakes mobile toggle button and skip links */
+.greedy-nav__toggle,
+.skip-links,
+.skip-links a {
   display: none !important;
 }
 
-.skip-links {
+/* Hide footer Follow + Feed section on all pages */
+.page__footer-follow,
+.page__footer-follow .social-icons,
+.page__footer-follow .rss-subscribe,
+.author__urls-wrapper,
+.author__urls {
   display: none !important;
+}
+
+/* Make author profile avatar a perfect circle */
+.author__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.author__avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Lay out author avatar and text side by side */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.author__content {
+  flex: 1;
+}
+
+/* Make author name slightly larger and clearer */
+.author__name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+/* Home page hero: avatar left, text right */
+.home-hero {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.home-hero__avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.home-hero__avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-hero__content {
+  flex: 1;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.home-hero__name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+  color: #2c3e50;
+}
+
+.home-hero__tagline {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #555;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Make page titles match home name style */
+.page__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* Show page titles as plain text, not links */
+.page__title a {
+  color: inherit;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+/* Make site title look like nav link so brand doesn't overpower menu */
+.site-title a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-transform: none;
+}
+
+/* Hide site title/link at top of each page */
+.site-title {
+  display: none !important;
+}
+
+@media (max-width: 640px) {
+  .home-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Hide "Recent Posts" section on the home layout */
+.layout--home .archive {
+  display: none !important;
+}
+
+/* Projects page: show projects as clickable tiles */
+.projects-page .archive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 960px;
+  margin: 1.5rem auto 0 auto;
+  justify-content: center;
+}
+
+.projects-page .archive__item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.projects-page .archive__item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+.projects-page .archive__item-teaser {
+  margin: -0.75rem -0.75rem 0.75rem -0.75rem;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.projects-page .archive__item-teaser img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.projects-page .archive__item-title a {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.projects-page .archive__item-excerpt {
+  margin-top: 0.5rem;
+  font-size: 0.98rem;
+  color: #555;
 }

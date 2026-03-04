@@ -3,11 +3,10 @@ layout: single
 title: "Adaptive Training for Prosthetic Control"
 excerpt: "Using data to personalize motor learning and improve user outcomes — comparative user study across 50+ participants using EMG signals and adaptive ML."
 header:
-  overlay_color: "#1a4a3a"
-  overlay_filter: 0.6
+  teaser: /assets/images/prosthesis_hand.jpg
+  overlay_color: "#dde3ea"
 toc: true
 toc_label: "Contents"
-author_profile: true
 tags:
   - Python
   - Machine Learning
@@ -16,7 +15,7 @@ tags:
   - Behavioral Research
 ---
 
-[View Code](https://github.com/vayneeS/prosthesis-strategies-with-ml){: .btn .btn--inverse target="_blank"}
+[View Code](https://github.com/vayneeS/prosthesis-strategies-with-ml)
 
 ---
 The second study in my PhD focused on optimizing prosthetic control to explore performance and human agency in human-machine interaction.
@@ -39,7 +38,7 @@ To test the adaptive training strategy, I ran a user study comparing it to two o
 - **User-Choice** — users select gestures based on perceived difficulty
 - **Adaptive** — selects gestures based on classifier performance, focusing practice where it matters most
 
-![Experiment setup](../assets/images/experiment.png)
+![Experiment setup](/assets/images/experiment.png)
 *Participants wore a Myo armband and performed gestures following one of three training strategies.*
 
 ---
@@ -84,17 +83,17 @@ I designed and implemented a data pipeline to turn raw, noisy sensor signals int
 
 ### 1. Adaptive training reduces time-to-competency
 <!-- 
-![Learning rates by strategy](../assets/images/Learning_rates_by_strategy.png) -->
+![Learning rates by strategy](/assets/images/Learning_rates_by_strategy.png) -->
 *Users exposed to adaptive gesture selection improved significantly faster than those using random or self-directed practice. In practical terms: the adaptive system increases learning speed.*
 
 ### 2. Faster learning — without sacrificing final performance
 
-<!-- ![Accuracy across trials](../assets/images/accuracy_across_trials_by_strategy.png) -->
+<!-- ![Accuracy across trials](/assets/images/accuracy_across_trials_by_strategy.png) -->
 *All groups reached similar peak accuracy by the end of training. The difference lies in speed: users trained with the adaptive strategy achieved proficiency earlier — an efficiency gain with no trade-off in quality.*
 
 ### 3. Stronger skill transfer and system understanding
 
-<!-- ![Test accuracy](../assets/images/TPR.png) -->
+<!-- ![Test accuracy](/assets/images/TPR.png) -->
 *When tested on new movement sequences, users trained using the adaptive strategy performed significantly better than users of the user-choice strategy — indicating deeper skill acquisition and better generalization.*
 
 ---
@@ -127,4 +126,4 @@ The adaptive strategy is simple: select gestures with lowest classifier separabi
 
 ## Reference
 
-[Comparing Teaching Strategies of a Machine Learning-based Prosthetic Arm — HAL Archive](https://amu.hal.science/ISIR_ACIDE/hal-04527854v1){:target="_blank"}
+[Comparing Teaching Strategies of a Machine Learning-based Prosthetic Arm — HAL Archive](https://amu.hal.science/ISIR_ACIDE/hal-04527854v1)

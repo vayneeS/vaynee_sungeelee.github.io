@@ -3,11 +3,10 @@ layout: single
 title: "Personalizing Motor Learning with Machine Learning"
 excerpt: "How a multi-armed bandit algorithm can adapt motor skill training in real time — producing smoother, more expert-like movements than random practice."
 header:
-  overlay_color: "#1a4a3a"
-  overlay_filter: 0.6
-toc: true
-toc_label: "Contents"
-author_profile: true
+  teaser: /assets/images/experiment1.png
+  overlay_color: "#dde3ea"
+  toc: true
+  toc_label: "Contents"
 tags:
   - Python
   - Reinforcement Learning
@@ -22,7 +21,7 @@ An overview of my first PhD study exploring how machine learning can personalize
 
 Every day, millions of people work to master physical skills — stroke survivors relearning to write, athletes perfecting their technique, surgeons training for precision procedures. Yet traditional training follows a **one-size-fits-all approach** that ignores a fundamental truth: *everyone learns differently*.
 
-What if we could give every learner their own adaptive coach — one that watches their every movement and adjusts training instantly?
+What if we could give every learner their own adaptive coach — one that monitors movements and adjusts training instantly?
 
 ---
 
@@ -34,7 +33,7 @@ Random practice has been shown to be effective for learning motor skills, but do
 
 My team and I designed a controlled study where participants learned to trace curved paths using an infrared marker — a task that mirrors real-world motor challenges in rehabilitation (regaining hand control) and professional training (surgical precision).
 
-By varying the channel width, we controlled difficulty: *narrow channels = harder, wide channels = easier*. Instead of following a fixed training sequence, an **AI algorithm decided which difficulty to present next**, based on each learner's real-time performance.
+By varying the channel width, we controlled difficulty: *narrow channels = harder, wide channels = easier*. Instead of following a fixed training sequence, an **Machine Learning algorithm decided which difficulty to present next**, based on each learner's real-time performance.
 
 ![Experiment setup](/assets/images/experiment1.png)
 *Simplified illustration of the experiment setup, with an infrared marker on a stick tracing paths inside a channel whose width was changed dynamically by the algorithm.*
@@ -85,6 +84,7 @@ One promising direction for more complex movements e.g. sports: combining the ex
 
 ---
 
-## Future of Personalized Motor Learning
+## References
 
-This research proves that AI can deliver individualized motor training at scale — making expert-level coaching accessible to stroke survivors in remote clinics, athletes training at home, and professionals mastering complex skills.
+
+[Interactive curriculum learning increases and homogenizes motor smoothness](https://www.nature.com/articles/s41598-024-53253-3)

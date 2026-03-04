@@ -2,7 +2,6 @@
 layout: single
 title: "About"
 permalink: /about/
-author_profile: true
 ---
 
 I am a data scientist and HCI researcher who spent four years studying how people learn, adapt, and make decisions when working with ML systems.
@@ -21,4 +20,4 @@ Prior to my master's, I worked as a Salesforce consultant at Spoon Consulting in
 
 ---
 
-[Download my CV](/assets/Vaynee_Sungeelee_CV.pdf){: .btn .btn--primary target="_blank"}
+[Download my CV](/assets/Vaynee_Sungeelee_CV.pdf)

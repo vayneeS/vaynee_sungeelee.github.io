@@ -3,8 +3,8 @@ layout: single
 title: "MoviesDB - IMDb Data Engineering & Analytics (In progress)"
 excerpt: "A full data pipeline from raw IMDb files to an interactive graph exploration app."
 header:
-  overlay_color: "#1a4a3a"
-  overlay_filter: 0.6
+teaser: /assets/images/marvel_teaser.jpg
+overlay_color: "#dde3ea"
 toc: true
 toc_label: "Contents"
 ---
@@ -13,6 +13,10 @@ toc_label: "Contents"
   <strong>Stack:</strong> Python · MySQL · Docker · Neo4j · Streamlit · SQL
 </p>
 
+
+[View Code](https://github.com/vayneeS/interactive-curriculum-learning)
+
+---
 ## Overview
 
 MoviesDB transforms raw IMDb data into a clean, queryable database exposed through an interactive graph exploration interface.
@@ -21,21 +25,21 @@ The pipeline runs end-to-end: raw TSV files → relational database → graph da
 
 **Primary objectives:**
 - Data prep & ingestion: Ingest and structure the IMDb dataset into a relational MySQL database
-- Write SQL queries to extract and transform subsets of interest (e.g., Marvel films)
+- Write SQL queries to extract and transform subsets of interest (Marvel films)
 - No-Code database: Import structured data into Neo4j to leverage graph queries for relationship exploration
-- Visualization: Build a Streamlit app for interactive visualization of movie-people relationships
-- Testing and automation: Experiment with different services / frameworks using data pipeline to test flexibility and benchmark performance
-- Develop CI/CD pipelines to test an ddeploy code after testing
+- Visualization: Build a Streamlit app for interactive visualization of Marvel movie , actor and director relationships
+- Testing and automation: Experiment with different frameworks to benchmark performance
+- Develop CI/CD pipelines to test and deploy code after testing
 ---
 
 ## Architecture
 
 | Stage | Tool | Rationale |
-|---|---|---|
-| Ingestion & storage | MySQL + Docker | Normalization, integrity constraints, efficient joins |
-| Extraction & transformation | SQL | Structured filtering, aggregation, subset definition |
-| Relationship modeling | Neo4j Aura | Multi-hop queries, graph traversal |
-| Interactive front end | Streamlit | Lightweight UI, no heavy web overhead |
+|---|---|
+| Ingestion & storage | MySQL + Docker | 
+| Extraction & transformation | SQL | 
+| Relationship modeling | Neo4j Aura | 
+| Interactive front end | Streamlit |
 
 ---
 
