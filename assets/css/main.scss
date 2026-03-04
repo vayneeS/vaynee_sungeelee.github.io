@@ -84,6 +84,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  gap: 0;
 
   li {
     list-style: none;
@@ -92,6 +93,16 @@ body {
 
   a {
     display: inline-block;
+    padding: 0.5rem 1.25rem; /* space around each link */
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+    color: #333;
+
+    &:hover {
+      color: var(--accent);
+      background: rgba(0,0,0,0.04);
+      border-radius: 4px;
+    }
   }
 }
 
