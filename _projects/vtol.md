@@ -4,7 +4,7 @@ title: "VTOL Flight Summaries"
 excerpt: "Automatically generating cinematic highlight videos of electric aircraft trips using virtual camera control and optimization."
 header:
   teaser: /assets/images/flight_teaser.png
-  overlay_color: "#1a4a3a"
+  overlay_color: "#dde3ea"
 tags:
   - 3D Visualization
   - Optimization

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Adaptive Training for Prosthetic Control"
-excerpt: "Using data to personalize motor learning and improve user outcomes — comparative user study across 50+ participants using EMG signals and adaptive ML."
+excerpt: "Using adaptive algorithms to personalize motor learning and improve user outcomes — comparative user study across 50+ participants."
 header:
   teaser: /assets/images/prosthesis_hand.jpg
   overlay_color: "#dde3ea"
