@@ -26,6 +26,7 @@ defaults:
       type: projects
     values:
       layout: single
+      author_profile: false
 
 atom_feeds: false
 feed:
@@ -38,3 +39,5 @@ author:
   bio: "Behavioral Researcher + Data Scientist"
   location: "Paris, France"
   avatar: "/assets/images/profile.png"
+
+navigation: main
