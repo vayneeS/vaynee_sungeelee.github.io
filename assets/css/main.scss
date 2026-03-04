@@ -726,6 +726,10 @@ a:hover {
 //   justify-content: center;
 // }
 .projects-page .archive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 960px;
   float: none !important;
   width: 100% !important;
   margin-left: 0 !important;
