@@ -9,8 +9,8 @@ plugins:
 # Your site info
 title: Vaynee Sungeelee
 description: Data Scientist & HCI Researcher
-url: "https://vayneeS.github.io"
-baseurl: "/vaynee_sungeelee.github.io"
+url: "https://vaynees.github.io"
+baseurl: ""
 
 collections:
   projects:
