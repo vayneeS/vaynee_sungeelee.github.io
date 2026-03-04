@@ -34,7 +34,7 @@ The pipeline runs end-to-end: raw TSV files → relational database → graph da
 
 ## Architecture
 
-| Stage | Tool | Rationale |
+| Stage | Tool | 
 |---|---|
 | Ingestion & storage | MySQL + Docker | 
 | Extraction & transformation | SQL | 

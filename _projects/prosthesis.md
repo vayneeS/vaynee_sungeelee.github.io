@@ -3,7 +3,7 @@ layout: single
 title: "Adaptive Training for Prosthetic Control"
 excerpt: "Using adaptive algorithms to personalize motor learning and improve user outcomes — comparative user study across 50+ participants."
 header:
-  teaser: /assets/images/prosthesis_hand.jpg
+  teaser: /assets/images/prosthesis_hand.JPG
   overlay_color: "#dde3ea"
 toc: true
 toc_label: "Contents"
