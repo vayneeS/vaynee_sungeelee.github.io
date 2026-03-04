@@ -3,8 +3,8 @@ layout: single
 title: "MoviesDB - IMDb Data Engineering & Analytics (In progress)"
 excerpt: "A full data pipeline from raw IMDb files to an interactive graph exploration app."
 header:
-teaser: /assets/images/marvel_teaser.jpg
-overlay_color: "#dde3ea"
+  teaser: /assets/images/marvel_teaser.jpg
+  overlay_color: "#dde3ea"
 toc: true
 toc_label: "Contents"
 ---

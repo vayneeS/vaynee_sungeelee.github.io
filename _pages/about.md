@@ -4,7 +4,7 @@ title: "About"
 permalink: /about/
 ---
 
-I am a data scientist and HCI researcher who spent four years studying how people learn, adapt, and make decisions when working with ML systems.
+I am an HCI researcher who spent four years studying how people learn, adapt, and make decisions when working with ML systems.
 
 My PhD work ranged from designing adaptive ML systems for motor learning to investigating how domain experts perceive and challenge generative AI — two sides of the same question: whether an AI system performs, but also whether the people it affects can make sense of it.
 
