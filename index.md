@@ -5,7 +5,7 @@ author_profile: false
 
 <div class="home-hero">
   <div class="home-hero__avatar">
-    <img src="/assets/images/profile.png" alt="Vaynee Sungeelee">
+    <img src="/assets/images/profile.jpg" alt="Vaynee Sungeelee">
   </div>
   <div class="home-hero__content">
     <h1 class="home-hero__name">{{ site.title }}</h1>
