@@ -10,7 +10,7 @@ author_profile: false
 
 <div class="projects-grid">
 
-  <a class="project-tile" href="/projects/olist_analysis_powerbi/">
+  <a class="project-tile" href="/projects/olist-analysis-powerbi">
     <!-- <img src="/assets/images/marvel_teaser.jpg" alt="MoviesDB"> -->
     <div class="project-tile__body">
       <h3>Power BI Olist ecommerce dashboard</h3>
