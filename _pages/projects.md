@@ -10,13 +10,6 @@ author_profile: false
 
 <div class="projects-grid">
 
-  <a class="project-tile" href="/projects/olist-analysis-powerbi">
-    <!-- <img src="/assets/images/marvel_teaser.jpg" alt="MoviesDB"> -->
-    <div class="project-tile__body">
-      <h3>Power BI Olist ecommerce dashboard</h3>
-      <p>A dashboard to explore customer satisfaction and seller performance in the Olist dataset.</p>
-    </div>
-  </a>
 
   <a class="project-tile" href="/projects/moviesdb/">
     <img src="/assets/images/marvel_teaser.jpg" alt="MoviesDB">
