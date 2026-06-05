@@ -7,13 +7,13 @@ classes: wide project-page
 
 <div class="project-content" markdown="1">
   <p>
-   I work at the intersection of data, artificial intelligence, and human behavior, with a focus on how AI systems support learning and decision-making in education and health contexts. I hold a PhD in Human-Computer Interaction, where I studied how people understand, adapt to, and use data-driven systems in practice.
+   I work at the intersection of artificial intelligence and human behavior, with a focus on how AI systems support learning and decision-making. I hold a PhD in Human-Computer Interaction, where I studied how people understand, adapt to, and use data-driven systems in a motor learning context.
   </p>
   <p>
-    My work spans the design of adaptive systems for motor learning and the evaluation of how experts interpret and question generative AI. Across these projects, I focus on how system outputs are integrated into reasoning and decision processes, beyond technical performance alone.
+    My work spans the design of adaptive systems and the evaluation of how experts interpret and question generative AI. Across these projects, I focus on how system outputs are integrated into reasoning and decision processes, beyond technical performance alone.
   </p>
   <p>
-  I am now applying this perspective to data analysis, AI evaluation, and problem structuring in applied environments. I am particularly interested in systems where human understanding, trust, and decision-making are central to performance.
+  I now apply this perspective to AI transformation and innovation: structuring business problems, identifying high-value AI use cases, and evaluating their real-world impact. I am especially interested in contexts where human understanding, trust, and decision-making are key to performance.
 
 
   <p><strong>What I focus on</strong></p>
@@ -39,9 +39,9 @@ classes: wide project-page
     My earlier projects ranged from optimizing virtual 3D trajectories for electric air taxi (VTOL) flight videos to building eye-tracking prototypes for improved search relevance.
   </p>
   <p>
-    Prior to my Master's degree, I worked as a Salesforce consultant at Spoon Consulting in Mauritius, supporting digital transformation for clients like AXA and L'Oréal.
+    Prior to my Master's degree, I worked as a Salesforce Consultant in Mauritius, supporting digital transformation for clients like AXA and L'Oréal.
   </p>
 
-[Download my CV](/assets/Vaynee_Sungeelee_CV_Generic.pdf)
+[Download my CV](/assets/Vaynee_Sungeelee_CV_Consultante_Transformation_IA.pdf)
 
 </div>
