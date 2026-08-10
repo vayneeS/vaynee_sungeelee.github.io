@@ -71,9 +71,8 @@ Skills learned with adaptive guidance were transferred to new situations. In rea
 
 ### Accuracy didn't differ with the adaptive strategy
 
-With the MAB adaptive approach, we didn't rely on a learner model. This means that the learning progress and the exploratory nature of the algorithm determined the next exercise. The MAB algorithm is sensitive to hyperparameters chosen, such as the window size (distance between the attempts) or the amount of exploration. This means that a learner who is anxious can make more mistakes at the start, resulting in a slower progress. 
+With the MAB adaptive approach, we didn't rely on a learner model. This means that the learning progress and the exploratory nature of the algorithm determined the next exercise. The MAB algorithm is sensitive to hyperparameters chosen, such as the window size (distance between the attempts) or the amount of exploration. For example, a learner who is anxious can make more mistakes at the start, resulting in a slower progress. 
 
-In addition,  
 ---
 
 
