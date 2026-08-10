@@ -4,7 +4,7 @@ minimal_mistakes_skin: "default"
 repository: "vayneeS/vayneeS.github.io"
 
 title: Vaynee Sungeelee
-description: PhD in HCI | Data Analysis • AI Evaluation • Problem Structuring
+description: Understanding human behavior to design human-centered technologies  | Applied Research & Innovation | PhD Human-Machine Interaction
 url: "https://vaynees.github.io"
 baseurl: ""
 
@@ -19,7 +19,7 @@ plugins:
 
 author:
   name: "Vaynee Sungeelee"
-  bio: "Human-Centered AI, Data Analysis & Consulting"
+  bio: "Human-Centered AI"
   location: "Paris, France"
   avatar: "/assets/images/profile.jpg"
   links: []

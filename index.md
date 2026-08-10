@@ -13,9 +13,7 @@ author_profile: false
     <p>
     <div style="max-width: min(50%, 100%);">
       Hello, I'm <strong>Vaynee Sungeelee</strong>.
-        I work at the intersection of data, AI, and human experience.
-
-        With a background in Computer Science and a PhD in Human-Computer Interaction, I explore how data-driven systems are used, understood, and evaluated in real-world contexts — with a focus on making them more meaningful for decision-making.
+        PhD in Human-Computer Interaction with experience in applied behavioral research and CRM consulting. I use mixed methods and data analysis to understand behaviors, needs and technology use, evaluate interventions, and translate evidence into actionable recommendations. My research has focused particularly on human interaction with AI and adaptive systems, combining experimental, quantitative and qualitative approaches.
     </div>
     </p>
   </div>
